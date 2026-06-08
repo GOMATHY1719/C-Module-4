@@ -1,20 +1,25 @@
-# Strings: Check If Character Is an Alphabet Using ASCII and If-Else in C
+# # Maximum of Three Numbers Using Conditional Operator
 
-This repository contains a simple **C program** that checks whether the entered character is an **alphabet or not**, using **ASCII values** and an `if-else` statement.
+This repository contains a **C program** that determines the **maximum of three integer values** using the **conditional (ternary) operator**.
 
 ## 🎯 Aim
 
-To write a C program that checks if an input character is an **alphabet** (either uppercase or lowercase) using **ASCII values** and `if-else` statements.
+To write a C program that finds the maximum between three integers using the **conditional (ternary) operator**.
 
 ## 📋 Algorithm
 
-1. Declare a variable `ch` of type `char`.
-2. Read a character from the user.
-3. Use an `if-else` condition to check:
-   - If `ch` is between `'A'` and `'Z'` (ASCII 65–90), or
-   - If `ch` is between `'a'` and `'z'` (ASCII 97–122).
-4. If the condition is true, print `"Alphabet"`.
-5. Otherwise, print `"Not an Alphabet"`.
+1. Declare integer variables: `a`, `b`, `c`, and `max`.
+2. Prompt the user to enter three integer values (`a`, `b`, `c`).
+3. Use nested ternary operators to calculate the maximum:
+   ```c
+   max = (a > b) ? (a > c ? a : c) : (b > c ? b : c);
+4. Display the maximum value.
 
-## 🧾 Sample Output
+## Program
+```
+#include <stdio.h>
 
+int main() {
+    int a, b, c, max;
+    printf("Enter three integers:\n");
+    scanf("%d %d %d", &a, &b, &c);
