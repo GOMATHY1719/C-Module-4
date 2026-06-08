@@ -1,5 +1,8 @@
 # Strings: Word Counter in a String (Using Function in C)
 
+### Name: GOMATHY G
+### Reg No: 212223250002
+
 ## 🎯 Aim
 To write a C program that counts the total number of words in a given string using a function.
 
@@ -12,8 +15,18 @@ To write a C program that counts the total number of words in a given string usi
 4. **Print** the final value of `count`, which represents the total number of words in the string.
 
 ## Program
-Add code Here
-
-## Output
-
-## Result
+```
+#include <stdio.h>
+void countWords() {
+    char a[100];
+    int i = 0, count = 1;
+    printf("Enter a string: ");
+    scanf("%[^\n]", a);
+    do {
+        if(a[i] == ' ' || a[i] == '\n' || a[i] == '\t') {
+            count++;
+        }
+        i++;
+    } while(a[i] != '\0');
+    printf("Total number of words = %d\n", count);
+}
