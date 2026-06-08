@@ -1,5 +1,8 @@
 # # Maximum of Three Numbers Using Conditional Operator
 
+### Name: GOMATHY G
+### Reg No: 212223250002
+
 This repository contains a **C program** that determines the **maximum of three integer values** using the **conditional (ternary) operator**.
 
 ## 🎯 Aim
@@ -16,8 +19,10 @@ To write a C program that finds the maximum between three integers using the **c
 4. Display the maximum value.
 
 ## Program
-Add code here
+```
+#include <stdio.h>
 
-## Output
-
-## Result
+int main() {
+    int a, b, c, max;
+    printf("Enter three integers:\n");
+    scanf("%d %d %d", &a, &b, &c);
